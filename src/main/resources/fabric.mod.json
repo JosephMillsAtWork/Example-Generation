@@ -1,29 +1,32 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "imagestooworld",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Images too World",
+  "description": "Example with fabric of how to setup world generation",
   "authors": [
-    "Me!"
+    "m_jimmer"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://github.com/JosephMillsAtWork",
+    "sources": "https://github.com/JosephMillsAtWork/i2w"
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
-
+  "icon": "assets/imagestooworld/icon.png",
+  "accessWidener": "i2w.accesswidener",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "com.mjimmer.imagestooworld.I2WFabric"
+    ],
+    "fabric-datagen": [
+      "com.mjimmer.imagestooworld._build.ImagesTooWorldDataGenerator"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "i2w.mixins.json"
   ],
 
   "depends": {
